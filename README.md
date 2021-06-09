@@ -1,6 +1,6 @@
-# Cep Extractor Source
+# Ct Files Extractor Source
 
-This is the repository for the Cep Extractor source connector, written in Python.
+This is the repository for the Ct Files Extractor source connector, written in Python.
 For information about how to use this connector within Airbyte, see [the documentation](https://docs.airbyte.io/integrations/sources/cep-extractor).
 
 ## Local development
