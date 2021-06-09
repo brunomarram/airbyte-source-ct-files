@@ -3,13 +3,13 @@ FROM python:3.7-slim
 # Bash is installed for more convenient debugging.
 RUN apt-get update && apt-get install -y bash && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /airbyte/integration_code
+WORKDIR /airbyte/source_ct_files
 COPY source_ct_files ./source_ct_files
 COPY main.py ./
 COPY setup.py ./
 RUN pip install .
 
-ENTRYPOINT ["python", "/airbyte/integration_code/main.py"]
+ENTRYPOINT ["python", "/airbyte/source_ct_files/main.py"]
 
 LABEL io.airbyte.version=0.1.0
-LABEL io.airbyte.name=airbyte/source-cep-extractor
+LABEL io.airbyte.name=airbyte/source_ct_files
