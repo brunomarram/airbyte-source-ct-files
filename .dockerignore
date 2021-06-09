@@ -2,6 +2,6 @@
 !Dockerfile
 !Dockerfile.test
 !main.py
-!source_cep_extractor
+!source_ct_files
 !setup.py
 !secrets
